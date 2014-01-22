@@ -36,7 +36,7 @@ To view a complete demonstration of it's features and usage, access our [example
 
 The options that you can set are:
 
- * `autoLoad`: Enabled this will call `maskMoney('mask')` when the element in found. This only prevents you from having to call it manually after initiating moneyMask. default: false
+ * `autoLoad`: Enabled this will call `maskMoney('mask')` when initiating the element. This only prevents you from having to call it manually after initiating moneyMask. default: false
  * `prefix`: the prefix to be displayed before(aha!) the value entered by the user(example: "US$ 1234.23"). default: ''
  * `suffix`: the prefix to be displayed after the value entered by the user(example: "1234.23 €"). default: ''
  * `affixesStay`: set if the prefix and suffix will stay in the field's value after the user exits the field. default: true
