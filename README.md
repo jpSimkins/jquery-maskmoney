@@ -1,4 +1,4 @@
-# jQuery maskMoney [![Build Status](https://travis-ci.org/plentz/jquery-maskmoney.png)](https://travis-ci.org/plentz/jquery-maskmoney)
+# jQuery maskMoney [![Build Status](https://api.travis-ci.org/jpSimkins/jquery-maskmoney.png)](https://travis-ci.org/jpSimkins/jquery-maskmoney)
 
 Just a simple way to create masks to your currency form fields with [jQuery](http://jquery.com/).
 
