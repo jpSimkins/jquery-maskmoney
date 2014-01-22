@@ -55,6 +55,7 @@
 
         init : function (settings) {
             settings = $.extend({
+                autoLoad: false,
                 prefix: "",
                 suffix: "",
                 affixesStay: true,
@@ -410,6 +411,9 @@
                     defaultEmptyValue = setSymbol( getDefaultMask() );
                 }
 
+                if (settings.autoLoad) {
+                    mask();
+                }
             });
         }
     };
