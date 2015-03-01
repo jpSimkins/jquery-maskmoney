@@ -19,6 +19,7 @@ test("allowZero: true - mask keeps default 0 value", function() {
 // Test allowZero: false with 0 input
 test("allowZero: false -  mask empties 0 input value", function() {
     var input = $("#input4").maskMoney();
+    input.trigger("mask");
     keypress(input, 0);
     equal(input.val(), "", "0 value should be empty due to settings");
 });
@@ -26,6 +27,7 @@ test("allowZero: false -  mask empties 0 input value", function() {
 // Test allowZero: true with 0 input
 test("allowZero: true - mask keeps 0 input value", function() {
     var input = $("#input5").maskMoney();
+    input.trigger("mask");
     keypress(input, 0);
     equal(input.val(), "0.00$", "0 value should be 0.00$ due to settings");
 });
@@ -75,6 +77,35 @@ test("allowZero: true - backspace on zero value changes to empty", function() {
     keydown(input, "backspace");
     keydown(input, "backspace"); // zero value
     keydown(input, "backspace"); // one more backspace will make it empty
+
+    equal(input.val(), "", "field should be empty");
+});
+
+// Test allowEmptyDefault: false - Blur should force the masked value
+test("allowEmptyDefault: false - Blur should force the masked value", function() {
+    var input = $("#input1");
+    input.maskMoney({
+        "prefix": "$",
+        "allowZero": true,
+        "allowNegative": true,
+        "allowEmpty": true,
+        "allowEmptyDefault": false
+    });
+    input.blur();
+
+    equal(input.val(), "$0.00", "field should be properly masked to $0.00");
+});
+
+// Test allowEmptyDefault: true - Blur should keep an empty value
+test("allowEmptyDefault: true - Blur should keep an empty value", function() {
+    var input = $("#input1");
+    input.maskMoney({
+        "prefix": "$",
+        "allowZero": true,
+        "allowNegative": true,
+        "allowEmpty": true
+    });
+    input.blur();
 
     equal(input.val(), "", "field should be empty");
 });

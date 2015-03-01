@@ -64,7 +64,8 @@
                 precision: 2,
                 allowZero: false,
                 allowNegative: false,
-                allowEmpty: false
+                allowEmpty: false,
+                allowEmptyDefault: true
             }, settings);
 
             return this.each(function () {
@@ -367,7 +368,7 @@
                     }
 
                     if ($input.val() === "" || $input.val() === setSymbol(getDefaultMask())) {
-                        if (!settings.allowZero || settings.allowEmpty && leaveEmpty) {
+                        if (!settings.allowZero || settings.allowEmpty && (leaveEmpty || !leaveEmpty && settings.allowEmptyDefault)) {
                             $input.val("");
                         } else if (!settings.affixesStay) {
                             $input.val(getDefaultMask());
