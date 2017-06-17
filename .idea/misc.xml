@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="PHPUNIT_PHAR" custom_loader_path="" phpunit_phar_path="$PROJECT_DIR$/../../__IDE_RESOURCES/phpunit-5.4.4.phar" />
+      <phpunit_by_interpreter interpreter_id="423655b8-72d3-4180-a34e-22b350485556" load_method="CUSTOM_LOADER" custom_loader_path="/usr/local/bin/phpunit" phpunit_phar_path="/var/www/vhosts/__IDE_RESOURCES/phpunit-5.4.4.phar" />
+    </phpunit_settings>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="CURRENT_VAGRANT" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="VagrantProjectSettings">
+    <option name="instanceFolder" value="$USER_HOME$/Vagrant/jpCentOS" />
+    <option name="provider" value="" />
+  </component>
+</project>
